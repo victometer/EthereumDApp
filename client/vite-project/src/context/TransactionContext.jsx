@@ -79,7 +79,7 @@ export const TransactionProvider = ({ children }) => {
     const sendTransaction = async () => {
         try {
             // await getEthereumContract()
-            if (!ethereum) return alert('Please install Metamask')
+            if (!window.ethereum) return alert('Please install Metamask')
             // get the data from the form in Welcome
             const {addressTo, amount, keyword, message} = formData
             const transactionContract = getEthereumContract()

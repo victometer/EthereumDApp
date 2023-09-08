@@ -1,6 +1,6 @@
 //https://eth-sepolia.g.alchemy.com/v2/qFseLnd0fNQ8L3aw4e4nSpTLHU5nKN20
 
-require("@nomiclabs/hardhat-waffle");
+require("@nomicfoundation/hardhat-toolbox");
 
 module.exports = {
   solidity: "0.8.0",
